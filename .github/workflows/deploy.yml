@@ -1,4 +1,4 @@
-﻿name: Deploy Site to Pages
+name: Deploy Site to Pages
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
         run: npm run build
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: site/.vitepress/dist
 
